@@ -126,7 +126,7 @@ public class ForecastFragment extends Fragment {
         private String getReadableDateString(long dateTime) {
             //The api returns a unix timestamp this method converts to a valid date
             Date date = new Date(dateTime*1000);    //Must be converted to a millisecond to be converted to valid date
-            SimpleDateFormat format = new SimpleDateFormat("E, MM, d");
+            SimpleDateFormat format = new SimpleDateFormat("EE, MM, d");
             return format.format(date).toString();
 
         }
